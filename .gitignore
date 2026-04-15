@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Training outputs and checkpoints (large, don't commit)
+outputs/
+logs/
+
+# HuggingFace model cache
+.cache/
+hf_cache/
+
+# Weights & Biases
+wandb/
+
+# Environment
+.env
+*.env
