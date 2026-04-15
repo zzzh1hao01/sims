@@ -12,13 +12,11 @@
 # -----------------------------------------------------------------------
 # Environment
 # -----------------------------------------------------------------------
-module load python/3.11 cuda/12.1
+module load anaconda/2023.09 cuda/12.1
 
-# Activate the virtualenv you create on Oscar:
-#   python -m venv ~/envs/subpop
-#   source ~/envs/subpop/bin/activate
-#   pip install -r requirements.txt
-source ~/envs/subpop/bin/activate
+# Create once on Oscar:
+#   conda env create -f environment.yml
+conda activate sims
 
 # Store HuggingFace model cache on scratch so it persists across jobs.
 # Adjust the path to your Oscar scratch directory.
